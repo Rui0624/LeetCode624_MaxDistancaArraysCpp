@@ -23,7 +23,7 @@ public:
         
         for(int i = 1; i < arrays.size(); i++)
         {
-            res = max(res,max(end - arrays[i][0], arrays[i].back() - start)); // find the max distance, make sure no caculation in same array
+            res = max(res,max(end - arrays[i][0], arrays[i].back() - start)); // find the max distance, make sure no calculation in same array
             start = min(start, arrays[i][0]);
             end = max(end, arrays[i].back());
         }
